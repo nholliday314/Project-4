@@ -1,15 +1,17 @@
 # Project 4 - Day in the life
 
-This project will be my first adventure into building a full-stack application. I'll be building a Node/Express/MongoDB app from the ground up.
 
-## Project Idea and description
-While training for races, it's important to plan accordingly, whether it's a 5k or a full marathon. This running planner will allow the end user track and train for upcoming races by doing the following:
-1. Find and join upcoming races and their relavent information (distance, date, location, sign up info)
-2. Create race training plan by scheduling and tracking weekly runs
-3. End users will be able to also view who has favorited or joined a race
+## Overview
+Daily journaling meets Spotify Wrapped
 
+---
+## Project description
+This Day in the life app will allow users to log daily journal entires as well as a daily pulse (score of 1-5). The goal is to encourage users to consitantly log thir entries through a summarized view showing a view of the following: 
+1. Longest streak of entries 
+2. Monthly view of daily pulse entries
+3. Total number of entries
 
-
+---
 ## Tech Required
 * HTML/CSS
 * JavaScript
@@ -17,12 +19,16 @@ While training for races, it's important to plan accordingly, whether it's a 5k 
 * MongoDB
 * Mongoose
 
+---
+## Wireframe
+![Wireframe](https://github.com/nholliday314/Project-4/blob/main/Pictures/Wireframe.png)
 
-## ERDs
-![ERD](https://github.com/nholliday314/Project-2/blob/main/ERD.drawio.png?raw=true)
+---
+## Brand Toolkit
+![Brand Toolkit](https://github.com/nholliday314/Project-4/blob/main/Pictures/Brand%20Toolkit.png)
 
-
-## Restful Routing Chart
+---
+## Restful Routing Chart (Needs updating)
 | HTTP METHOD (_Verb_) | URL (_Nouns_) | CRUD | Response | Notes |
 | -------------------- | ------------- | ---- | -------- | ----- |
 | `Runners`            |               |      |          |       |
@@ -45,33 +51,32 @@ While training for races, it's important to plan accordingly, whether it's a 5k 
 | PUT/PATCH                     | /runningPlan /:runningPlanId               | UPDATE      | update runner with id of :runningPlanId          |       |
 | DELETE                     | 	/runningPlan /:runningPlanId               | DESTROY     | delete runner with id of :runningPlanId          |       |
 
-## Wireframes of all user views
-![Home Page](https://github.com/nholliday314/Project-2/blob/main/wireframe/home.png?raw=true)
-
-
-
+---
 ## User Stories
-* AAU, I can view 
-* AAU, I can
-* AAU, I can
-* AAU, I can
-Users can view, favorite, and join races
-* Users can see who has favorited and joined races
-* Users can view, add, edit running plans by run type, distance, pace, and specific detals
+* AAU, I can view/add/edit/delete my journal entries
+* AAU, I can view/add/edit/delete my daily pulse entries
+* AAU, I can update my profile name and email
+* AAU, I can view the total number of journal entries
+* AAU, I can view the total number of daily pulse entries
+* AAU, I can view the longest streak of journal entries
+* AAU, I can view the longest streak of daily pulse entries
 
-
+---
 ## MVP goals
-* Have a home page displaying the following
-    * Upcoming Races
-    * Running Plans
-* Have a seperate page for both races and running plans
-* Allow users to add and edit both races and running plans
+* Home page 
+    * Dashboard view
+        * Total number of journal entries
+        * Total number of daily pulse entries
+* Journal page
+    * Add/edit/delete page
+* Daily Pulse page
+    * Add/edit/delete page
+* Edit Profile page
 
 
+---
 ## Stretch Goals
-* Connect racing API to allow user to add races 
-* Allow users to comment on races
-* Include calendar view of races and running plans
+* Allow users to see a monthly visualiztion of pulse entries by color
 
 
 
