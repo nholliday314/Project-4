@@ -1,91 +1,70 @@
-# Project 4 - Day in the life
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Overview
-Daily journaling meets Spotify Wrapped
+## Available Scripts
 
----
-## Project description
-This Day in the life app will allow users to log daily journal entires as well as a daily pulse (score of 1-5). The goal is to encourage users to consitantly log thir entries through a summarized view showing a view of the following: 
-1. Longest streak of entries 
-2. Monthly view of daily pulse entries
-3. Total number of entries
+In the project directory, you can run:
 
----
-## Tech Required
-* HTML/CSS
-* JavaScript
-* Python
-* MongoDB
-* Mongoose
+### `npm start`
 
----
-## Sprint Schedule
-* 12/17 - Complete project planning 
-* 12/18 - Complete all pages and journaling functionality
-* 12/19 - Complete daily pulse funtionality and home page dashboard
-* 12/20 - Complete final CSS styling
-* 12/21 - Presentation prep and demo
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
-## Wireframe
-![Wireframe](https://github.com/nholliday314/Project-4/blob/main/Pictures/Wireframe.png)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
-## Brand Toolkit
-![Brand Toolkit](https://github.com/nholliday314/Project-4/blob/main/Pictures/Brand%20Toolkit.png)
+### `npm test`
 
----
-## Restful Routing Chart (Needs updating)
-| HTTP METHOD (_Verb_) | URL (_Nouns_) | CRUD | Response | Notes |
-| -------------------- | ------------- | ---- | -------- | ----- |
-| `Runners`            |               |      |          |       |
-| GET                     | /runners              | READ     | array of runners         |       |
-| GET                     | /runners/:runnerId              | READ     | single runner with id of :runnerId         |       |
-| POST                     | /runners             | CREATE     | add runners to list         |       |
-| PUT/PATCH                     | /runners/:runnerId              | UPDATE      | update runner with id of :runnerId         |       |
-| DELETE                     | 	/runners/:runnerId              | DESTROY     | delete runner with id of :runnerId         |       |
-| `Races`              |               |      |          |       |
-| GET                     | /races              | READ     | array of races         |       |
-| GET                     | /races/:raceId              | READ     | single races with id of :raceId         |       |
-| POST                     | /races              | CREATE     | 	add races to list         |       |
-| PUT/PATCH                     | /races/:raceId              | UPDATE     |  update races with id of :raceId        |       |
-| DELETE                     | /races/:racesId              | DESTROY     | 	destroy book with id of :raceId         |       |
-| DELETE                     | 	/races/:raceId/runners/:runnerId             | UPDATE     | remove the race with an id of :raceId from the runner with an id of :runnerId         |       |
-| `Running Plan`              |               |      |          |       |
-| GET                     | /runningPlan            | READ     | array of running plans         |       |
-| GET                     | /runningPlan/:runnerId              | READ     | single running plan with id of :runningPlanId         |       |
-| POST                     | /runningPlan              | CREATE     | add runners to list         |       |
-| PUT/PATCH                     | /runningPlan /:runningPlanId               | UPDATE      | update runner with id of :runningPlanId          |       |
-| DELETE                     | 	/runningPlan /:runningPlanId               | DESTROY     | delete runner with id of :runningPlanId          |       |
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
-## User Stories
-* AAU, I can view/add/edit/delete my journal entries
-* AAU, I can view/add/edit/delete my daily pulse entries
-* AAU, I can update my profile name and email
-* AAU, I can view the total number of journal entries
-* AAU, I can view the total number of daily pulse entries
-* AAU, I can view the longest streak of journal entries
-* AAU, I can view the longest streak of daily pulse entries
+### `npm run build`
 
----
-## MVP goals
-* Home page 
-    * Dashboard view
-        * Total number of journal entries
-        * Total number of daily pulse entries
-* Journal page
-    * Add/edit/delete page
-* Daily Pulse page
-    * Add/edit/delete page
-* Edit Profile page
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
----
-## Stretch Goals
-* Allow users to see a monthly visualiztion of pulse entries by color
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
