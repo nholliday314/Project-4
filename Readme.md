@@ -20,6 +20,14 @@ This Day in the life app will allow users to log daily journal entires as well a
 * Mongoose
 
 ---
+## Sprint Schedule
+* 12/17 - Complete project planning 
+* 12/18 - Complete all pages and journaling functionality
+* 12/19 - Complete daily pulse funtionality and home page dashboard
+* 12/20 - Complete final CSS styling
+* 12/21 - Presentation prep and demo
+
+---
 ## Wireframe
 ![Wireframe](https://github.com/nholliday314/Project-4/blob/main/Pictures/Wireframe.png)
 
