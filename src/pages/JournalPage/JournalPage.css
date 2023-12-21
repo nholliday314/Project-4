@@ -1,0 +1,12 @@
+.Journal-Page {
+    padding: 10px; /* add padding as needed */
+    width: 100%;
+    color: #523A28;
+    z-index: 1000; 
+    background: #f2f1f092;
+}
+
+.Journal-Page img {
+    max-width: 40%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+  }

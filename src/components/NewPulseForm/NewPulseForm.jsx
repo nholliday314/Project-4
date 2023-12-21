@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as pulsesService from '../../utilities/pulses-service'
 import { getUser } from "../../utilities/users-service";
-
+import './NewPulseForm.css'
 
 
 export default function NewPulseForm({ addPulse }) {

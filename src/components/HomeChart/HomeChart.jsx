@@ -1,4 +1,5 @@
 import { Bar } from "react-chartjs-2";
+import './HomeChart.css'
 
 
 const HomeChart = ({ chartData }) => {
@@ -19,15 +20,15 @@ const HomeChart = ({ chartData }) => {
                             data: chartData.map((pulse) => pulse.rating),
                             backgroundColor: chartData.map((pulse) => {
                                 if (pulse.rating === 1) {
-                                    return 'rgba(226,64,59,0.5)'
+                                    return 'rgba(226,64,59,0.75)'
                                 } else if (pulse.rating === 2) {
-                                    return 'rgba(236,101,79,0.5)'
+                                    return 'rgba(236,101,79,0.75)'
                                 } else if (pulse.rating === 3) {
-                                    return 'rgba(248,196,61,0.5)'
+                                    return 'rgba(248,196,61,0.75)'
                                 } else if (pulse.rating === 4) {
-                                    return 'rgba(159,205,53,0.5)'
+                                    return 'rgba(159,205,53,0.75)'
                                 } else if (pulse.rating === 5) {
-                                    return 'rgba(92,174,42,0.5)'
+                                    return 'rgba(92,174,42,0.75)'
                                 }
                             }),
                             borderColor: chartData.map((pulse) => {

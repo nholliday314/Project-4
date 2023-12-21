@@ -4,13 +4,14 @@
   --tan-1: #FBF9F6;
   --tan-2: #E7E2DD;
   --tan-3: #E2D9D1;
-  --tan-4: #a4998e;
-  --orange: #32CD30;
+  --tan-4: #F2F1F0 --orange: #32CD30;
   --text-light: #968c84;
   --text-dark: #615954;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -22,6 +23,9 @@ body {
   background-color: var(--tan-4);
   padding: 2vmin;
   height: 100vh;
+  background-image: url("https://plus.unsplash.com/premium_photo-1669613233573-4911a0a81c63?q=80&w=3271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
 }
 
 code {
@@ -107,7 +111,8 @@ input {
   border: .1vmin solid var(--tan-3);
   border-radius: .5vmin;
   color: var(--text-dark);
-  background-image: none !important; /* prevent lastpass */
+  background-image: none !important;
+  /* prevent lastpass */
   outline: none;
 }
 
@@ -115,7 +120,8 @@ input:focus {
   border-color: var(--orange);
 }
 
-button, a.button {
+button,
+a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
@@ -140,7 +146,8 @@ button.btn-xs {
   padding: .4vmin .5vmin;
 }
 
-button:disabled, form:invalid button[type="submit"] {
+button:disabled,
+form:invalid button[type="submit"] {
   cursor: not-allowed;
   background-color: var(--tan-4);
 }

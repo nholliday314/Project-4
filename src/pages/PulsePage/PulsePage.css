@@ -1,9 +1,8 @@
-.pulse-graph {
+
+.PulsePage {
     padding: 10px; /* add padding as needed */
     width: 100%;
     color: #523A28;
     z-index: 1000; 
-    background: #f2f1f092;
-    
-    
+    background: #f2f1f07a;
 }

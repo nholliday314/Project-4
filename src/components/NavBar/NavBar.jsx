@@ -1,20 +1,24 @@
 import { Link } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
+import './NavBar.css'
 
 export default function NavBar({ user, setUser }) {
 
   return (
-    <nav>
-      <Link to="/home">Home</Link>
-      &nbsp; | &nbsp;
-      <Link to="/pulse">Pulse</Link>
-      &nbsp; | &nbsp;
-      <Link to="/journal">Journal</Link>
-      &nbsp; | &nbsp;
-      <Link to="/profile">Profile</Link>
-      &nbsp; | &nbsp;
-      <span>Welcome, {user.name}</span>
-      &nbsp;&nbsp;
+    <nav className='nav-bar' >
+      <label for="check" class="checkbtn">
+        
+        <i class="fas fa-bars"></i>
+        
+      </label>
+      {/* <label class="logo">Day in My Life</label> */}
+      <ul>
+        <li><a class="active" href="/home">Home</a></li>
+        <li><a href="/pulse">Pulse</a></li>
+        <li><a href="/journal">Journal</a></li>
+        <li><a href="/profile">Profile</a></li>
+      </ul>
+      
     </nav>
   );
 }

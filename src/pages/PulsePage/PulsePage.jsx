@@ -3,6 +3,7 @@ import PulseList from "../../components/PulseList/PulseList";
 import NewPulseForm from "../../components/NewPulseForm/NewPulseForm";
 import * as pulsesService from '../../utilities/pulses-service'
 import { getUser } from "../../utilities/users-service";
+import './PulsePage.css'
 
 export default function PulsePage() {
   const [pulses, setPulses] = useState([]);

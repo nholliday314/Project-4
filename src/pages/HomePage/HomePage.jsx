@@ -30,6 +30,7 @@ export default function HomePage() {
   return (
     <div className="pulse-graph">
       <h1>Day in My life</h1>
+      
       {
         pulses && pulses.length > 0 && <HomeChart chartData={pulses} />
       }

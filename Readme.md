@@ -4,21 +4,36 @@
 ## Overview
 Daily journaling meets Spotify Wrapped
 
----
+
 ## Project description
 This Day in the life app will allow users to log daily journal entires as well as a daily pulse (score of 1-5). The goal is to encourage users to consitantly log thir entries through a summarized view showing a view of the following: 
 1. Longest streak of entries 
 2. Monthly view of daily pulse entries
 3. Total number of entries
 
----
-## Tech Required
+
+## Tech Used
+### Tech Required:
 * HTML/CSS
 * JavaScript
 * MongoDB
 * Mongoose
 
+### Libraries/Frameworks:
+* React.js: https://react.dev/
+* Node.js: https://nodejs.org/en
+* Express.js: https://expressjs.com/
+* MongoDB: https://www.mongodb.com/
+* Mongoose: https://mongoosejs.com/
+* Chart.js: https://www.chartjs.org/ 
+
+### Software:
+* VSCode: https://code.visualstudio.com/
+* Miro: https://miro.com/
+
 ---
+
+## Project Planning
 ## Sprint Schedule
 * 12/17 - Complete project planning 
 * 12/18 - Complete all pages and journaling functionality
@@ -26,16 +41,16 @@ This Day in the life app will allow users to log daily journal entires as well a
 * 12/20 - Complete final CSS styling
 * 12/21 - Presentation prep and demo
 
----
-## Wireframe
+
+### Wireframe
 ![Wireframe](https://github.com/nholliday314/Project-4/blob/main/Pictures/Wireframe.png)
 
----
-## Brand Toolkit
+
+### Brand Toolkit
 ![Brand Toolkit](https://github.com/nholliday314/Project-4/blob/main/Pictures/Brand%20Toolkit.png)
 
----
-## Restful Routing Chart (Needs updating)
+
+### Restful Routing Chart (Needs updating)
 | HTTP METHOD (_Verb_) | URL (_Nouns_) | CRUD | Response | Notes |
 | -------------------- | ------------- | ---- | -------- | ----- |
 | `users`            |               |      |          |       |
@@ -57,8 +72,8 @@ This Day in the life app will allow users to log daily journal entires as well a
 | PUT/PATCH                     | /pulse-responses/:id              | UPDATE      | Update a specific pulse response by ID.         |       |
 | DELETE                     | 	/pulse-responses/:id             | DESTROY     | Delete a specific pulse response by ID.         |       |
 
----
-## User Stories
+
+### User Stories
 * AAU, I can view/add/edit/delete my journal entries
 * AAU, I can view/add/edit/delete my daily pulse entries
 * AAU, I can update my profile name and email
@@ -67,8 +82,8 @@ This Day in the life app will allow users to log daily journal entires as well a
 * AAU, I can view the longest streak of journal entries
 * AAU, I can view the longest streak of daily pulse entries
 
----
-## MVP goals
+
+### MVP goals
 * Home page 
     * Dashboard view
         * Total number of journal entries
@@ -80,8 +95,8 @@ This Day in the life app will allow users to log daily journal entires as well a
 * Edit Profile page
 
 
----
-## Stretch Goals
+
+### Stretch Goals
 * Allow users to see a monthly visualiztion of pulse entries by color
 
 
