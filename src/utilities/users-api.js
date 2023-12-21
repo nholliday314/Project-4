@@ -6,7 +6,6 @@ export async function signUp(userData) {
 }
 
 export async function login(credentials) {
-  console.log('login api method', `${BASE_URL}/login`, 'POST', credentials)
   // return sendRequest(api endpoint URL, request type, payload (Data: email and password)); 
   return sendRequest(`${BASE_URL}/login`, 'POST', credentials); 
 }
