@@ -7,7 +7,7 @@ export async function getPulse(pulseData) {
 }
 
 export async function getPulses(userId) {
-  return sendRequest(BASE_URL, 'GET', { userId: userId });
+  return sendRequest(`${BASE_URL}/pulses/${userId}`, 'GET');
 }
 
 export async function savePulse(pulseData) {

@@ -3,7 +3,7 @@ import PulseModal from "../../pages/PulsePage/PulseModal";
 import EditPulseForm from '../EditPulseForm/EditPulseForm';
 
 
-export default function PulseList({ pulses }) {
+export default function PulseList({ pulses, fetchPulses }) {
   const [selectedItem, setSelectedItem] = useState(null);
   // TODO: keep track of is editing selectedItem
   const [isEditing, setIsEditing] = useState(false);
@@ -14,6 +14,7 @@ export default function PulseList({ pulses }) {
 
   const closeModal = () => {
     setSelectedItem(null);
+    fetchPulses()
   };
 
 
@@ -52,7 +53,7 @@ export default function PulseList({ pulses }) {
           {
             isEditing && (
               <div>
-                <EditPulseForm selectedItem={selectedItem} updateIsEditing={() => setIsEditing(false)} updateSelectedItem={handleItemClick} />
+                <EditPulseForm selectedItem={selectedItem} updateIsEditing={() => setIsEditing(false)} updateSelectedItem={handleItemClick} closeModal={closeModal} />
               </div>
             )
           }

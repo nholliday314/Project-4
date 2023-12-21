@@ -3,7 +3,7 @@ import * as pulsesService from '../../utilities/pulses-service'
 
 
 
-export default function EditPulseForm({ selectedItem, updateIsEditing, updateSelectedItem }) {
+export default function EditPulseForm({ selectedItem, updateIsEditing, updateSelectedItem, closeModal }) {
     const [newPulse, setNewPulse] = useState(selectedItem);
 
     function handleChange(evt) {
@@ -19,6 +19,7 @@ export default function EditPulseForm({ selectedItem, updateIsEditing, updateSel
             setNewPulse({ title: "", rating: 1, date: new Date() });
             updateIsEditing();
             updateSelectedItem(pulse);
+            closeModal();
         } catch {
 
         }
@@ -49,7 +50,7 @@ export default function EditPulseForm({ selectedItem, updateIsEditing, updateSel
             />
 
             {/* change to save button and stop edit */}
-            <button type="submit">Submit Pulse</button>
+            <button type="submit">Submit Changes</button>
         </form>
     );
 

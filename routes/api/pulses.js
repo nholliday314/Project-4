@@ -4,7 +4,7 @@ const pulsesCtrl = require('../../controllers/api/pulses');
 // const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
 // GET /api/pulses (read: retrieve all pulse survey responses)
-router.get('/', pulsesCtrl.getPulses);
+router.get('/pulses/:userId', pulsesCtrl.getPulses);
 
 // POST /api/pulses (create: create a new pulse)
 router.post('/', pulsesCtrl.create);
