@@ -9,9 +9,15 @@ export default function ProfilePage({ user, setUser }) {
         setUser(null);
       }
     return (
-    <> 
+    <div> 
         <h1>Profile</h1>
+        
+        <div>
+        <p>Email: {user.email}</p>
+        <p>Username: {user.name}</p>
+      
+      </div>
         <Link to="" onClick={handleLogOut}>Log Out</Link>
-    </>
+    </div>
     );
   }

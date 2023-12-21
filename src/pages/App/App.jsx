@@ -24,7 +24,7 @@ export default function App() {
               <Route path="/home" element={<HomePage />} />
               <Route path="/pulse" element={<PulsePage />} />
               <Route path="/journal" element={<JournalPage />} />
-              <Route path="/profile" element={<ProfilePage />} />
+              <Route path="/profile" element={<ProfilePage user={user}/>} />
               <Route path="/orders/new" element={<NewOrderPage />} />
               <Route path="/orders" element={<OrderHistoryPage />} />
             </Routes>

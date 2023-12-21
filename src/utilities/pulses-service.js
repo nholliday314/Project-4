@@ -19,3 +19,9 @@ export async function getPulses(userId) {
   // return getPulse();
 }
 
+export async function deletePulse(pulseId) {
+  const pulse = await pulsesAPI.deletePulse(pulseId);
+  return pulse
+  // return getPulse();
+}
+

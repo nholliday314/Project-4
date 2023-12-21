@@ -18,6 +18,6 @@ export async function editPulse(pulseData) {
   return sendRequest(`${BASE_URL}/${pulseData._id}`, 'POST', pulseData);
 }
 
-export async function deletePulse(pulseData) {
-  return sendRequest(BASE_URL, 'DELETE', pulseData);
+export async function deletePulse(pulseId) {
+  return sendRequest(`${BASE_URL}/${pulseId}`, 'DELETE');
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PulseModal from "../../pages/PulsePage/PulseModal";
 import EditPulseForm from '../EditPulseForm/EditPulseForm';
-
+import * as pulsesService from '../../utilities/pulses-service'
 
 export default function PulseList({ pulses, fetchPulses }) {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -15,6 +15,7 @@ export default function PulseList({ pulses, fetchPulses }) {
   const closeModal = () => {
     setSelectedItem(null);
     fetchPulses()
+    setIsEditing(false)
   };
 
 
@@ -28,6 +29,15 @@ export default function PulseList({ pulses, fetchPulses }) {
 
   ));
 
+  const handleDelete = async (pulseId) => {
+    try {
+      const pulse = await pulsesService.deletePulse(pulseId)
+      closeModal();
+    } catch {
+
+
+    }
+  };
 
   return (
     <div>
@@ -43,7 +53,7 @@ export default function PulseList({ pulses, fetchPulses }) {
               <div className="title">Rating {selectedItem.rating}</div>
               {selectedItem.date.toString()}
               <button onClick={() => setIsEditing(true)}>Edit</button>
-              <button onClick={() => undefined}>Delete</button>
+              <button onClick={() => handleDelete(selectedItem._id)}>Delete</button>
             </div>)
 
           }
