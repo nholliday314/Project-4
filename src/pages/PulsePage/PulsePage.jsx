@@ -34,7 +34,7 @@ export default function PulsePage() {
       <h1>Pulse Survey</h1>
       <PulseList pulses={pulses} fetchPulses={fetchPulses} />
       <hr />
-      <NewPulseForm addPulse={addPulse} />
+      <NewPulseForm className="newPulseForm" addPulse={addPulse} />
     </div>
 
   );

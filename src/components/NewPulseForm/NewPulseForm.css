@@ -8,7 +8,8 @@
     color: black;
     border-radius: 0.3rem;
     padding: 1rem;
-    background-color: #f58026df;
+
+    background-color: #f5802689;
     max-width: 400px; /* Adjust the max-width as needed */
     margin: auto; /* Center the form */
 }

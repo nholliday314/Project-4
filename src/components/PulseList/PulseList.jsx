@@ -50,9 +50,9 @@ export default function PulseList({ pulses, fetchPulses }) {
           {!isEditing && (
             <div className="PulseListItem">
               <div className="selected-item-info">
-                <div className="title">{selectedItem.title}</div>
-                <div className="rating">Rating: {selectedItem.rating}</div>
-                <div className="date">{selectedItem.date.toString()}</div>
+                <div className="title-popup">{selectedItem.title}</div>
+                <div className="rating-popup">Rating: {selectedItem.rating}</div>
+                <div className="date-popup">{selectedItem.date.toString()}</div>
               </div>
               <div className="button-container">
                 <button className="edit-button" onClick={() => setIsEditing(true)}>Edit</button>

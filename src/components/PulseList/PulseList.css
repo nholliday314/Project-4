@@ -1,9 +1,28 @@
-.PulseListItem {
+/* .PulseListItem {
     display: flex;
     flex-direction: column;
     align-items: center;
+  } */
+  .PulseList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the column width as needed */
+    gap: 16px; /* Adjust the gap between items as needed */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 400px; /* Set a maximum height for the container */
   }
-  
+
+  .PulseListItem {
+    /* Your individual list item styles go here */
+    border: none; /* Example border style */
+    padding: 16px; /* Example padding for each item */
+    text-align: center; /* Center the text */
+    background-color: #f2f1f08e;
+    border-radius: 15px;
+  }
+
   .selected-item-info {
     margin-bottom: 10px;
   }
@@ -33,16 +52,31 @@
   
   .rating {
     grid-column: 1; /* Adjust the column index as needed */
-    font-size: x-large;
+    font-size: large;
     font-weight: 600;
   }
   
   .title {
     grid-column: 2; /* Adjust the column index as needed */
-    font-size: larger;
+    font-size: x-large;
   }
   
   .date {
+    grid-column: 2; /* Adjust the column index as needed */
+  }
+
+  .rating-popup {
+    grid-column: 1; /* Adjust the column index as needed */
+    font-size: x-large;
+    font-weight: 600;
+  }
+  
+  .title-popup {
+    grid-column: 2; /* Adjust the column index as needed */
+    font-size: xx-large;
+  }
+  
+  .date-popup {
     grid-column: 2; /* Adjust the column index as needed */
   }
 
@@ -51,10 +85,11 @@
     padding: 8px 12px;
     cursor: pointer;
     width: 75px;
+    position: relative;
   }
 
   .edit-button{ 
-    background-color: F58026;
+    background-color: #F58026;
   }
 
   .delete-button {
