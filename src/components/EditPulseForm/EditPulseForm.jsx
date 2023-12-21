@@ -1,6 +1,6 @@
 import { useState } from "react";
 import * as pulsesService from '../../utilities/pulses-service'
-
+import './EditPulseForm.css'
 
 
 export default function EditPulseForm({ selectedItem, updateIsEditing, updateSelectedItem, closeModal }) {
@@ -50,7 +50,7 @@ export default function EditPulseForm({ selectedItem, updateIsEditing, updateSel
             />
 
             {/* change to save button and stop edit */}
-            <button type="submit">Submit Changes</button>
+            <button className="submit-button" type="submit">Submit Changes</button>
         </form>
     );
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PulseModal from "../../pages/PulsePage/PulseModal";
 import EditPulseForm from '../EditPulseForm/EditPulseForm';
 import * as pulsesService from '../../utilities/pulses-service'
+import './PulseList.css';
 
 export default function PulseList({ pulses, fetchPulses }) {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -46,28 +47,24 @@ export default function PulseList({ pulses, fetchPulses }) {
       </ul>
       {selectedItem && (
         <PulseModal onClose={closeModal}>
-          {/* TODO: show this if not editing */}
-          {!isEditing &&
-            (<div className="PulseListItem">
-              {selectedItem.title}
-              <div className="title">Rating {selectedItem.rating}</div>
-              {selectedItem.date.toString()}
-              <button onClick={() => setIsEditing(true)}>Edit</button>
-              <button onClick={() => handleDelete(selectedItem._id)}>Delete</button>
-            </div>)
-
-          }
-
-          {/* TODO: show edit component if you are editing */}
-
-          {
-            isEditing && (
-              <div>
-                <EditPulseForm selectedItem={selectedItem} updateIsEditing={() => setIsEditing(false)} updateSelectedItem={handleItemClick} closeModal={closeModal} />
+          {!isEditing && (
+            <div className="PulseListItem">
+              <div className="selected-item-info">
+                <div className="title">{selectedItem.title}</div>
+                <div className="rating">Rating: {selectedItem.rating}</div>
+                <div className="date">{selectedItem.date.toString()}</div>
               </div>
-            )
-          }
-
+              <div className="button-container">
+                <button className="edit-button" onClick={() => setIsEditing(true)}>Edit</button>
+                <button className="delete-button" onClick={() => handleDelete(selectedItem._id)}>Delete</button>
+              </div>
+            </div>
+          )}
+          {isEditing && (
+            <div>
+              <EditPulseForm selectedItem={selectedItem} updateIsEditing={() => setIsEditing(false)} updateSelectedItem={handleItemClick} closeModal={closeModal} />
+            </div>
+          )}
         </PulseModal>
       )}
     </div>
