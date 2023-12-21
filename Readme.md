@@ -41,6 +41,8 @@ This Day in the life app will allow users to log daily journal entires as well a
 * 12/20 - Complete final CSS styling
 * 12/21 - Presentation prep and demo
 
+### ERD
+![ERD](https://github.com/nholliday314/Project-4/blob/main/Pictures/ERD.png)
 
 ### Wireframe
 ![Wireframe](https://github.com/nholliday314/Project-4/blob/main/Pictures/Wireframe.png)
